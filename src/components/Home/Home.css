@@ -1,0 +1,51 @@
+.home__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-color: #000000;
+}
+
+.home__descr {
+  font-size: 50px;
+  text-align: center;
+  flex-grow: 1;
+  color: #000;
+}
+
+.home__container {
+	background: linear-gradient(-45deg, #d4d4d4, #ffffff, #8a8a8a, #cecece);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@media (max-width: 1024px) {
+	.home__container {
+		background: transparent;
+		position: relative;
+	}
+	.home__descr {
+		position: absolute;
+		top: 30%;
+		width: 100%;
+    z-index: 10;
+    display: block;
+    background: rgba(240, 240, 240, 0.9);
+		font-size: 40px;
+	}
+	.bm-burger-bars {
+		background: #d4d4d4;
+	}
+}
